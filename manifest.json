@@ -1,0 +1,29 @@
+{
+    "name": "Toggle keyboard layout",
+    "version": "1.0.0",
+    "description": "Toggles keyboard layout between eng and rus",
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+    "manifest_version": 3,
+    "author": "Anton Sokur",
+    "commands": {
+        "_execute_browser_action": {
+            "suggested_key": {
+                "default": "Alt+Shift+1"
+            }
+        },
+        "toggle-keyboard-layout": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+2",
+                "mac": "Command+Shift+2"
+            },
+            "description": "Toggles keyboard layout"
+        }
+    },
+    "background": {
+        "service_worker": "background.js"
+    }
+}
