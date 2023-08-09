@@ -1,7 +1,7 @@
 {
     "name": "Toggle keyboard layout",
     "version": "1.0.0",
-    "description": "Toggles keyboard layout between eng and rus",
+    "description": "Toggles keyboard layout between eng and ukr",
     "permissions": [
         "activeTab",
         "scripting",

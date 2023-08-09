@@ -33,18 +33,18 @@ function toggleAndSetKeyboardLayout() {
         const text = activeElement.value;
         console.log(text);
         const englishLayout = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-        const russianLayout = 'фисвуапршолдьтщзйкыегмцчняФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ';
+        const ukrainianLayout = 'фисвуапршолдьтщзйкіегмцчняФІСВУАПРШОЛДЬТЩЗЙКІЕГМЦЧНЯ';
 
         const newLayoutText = text
             .split('')
             .map((char) => {
                 const englishIndex = englishLayout.indexOf(char);
-                const russianIndex = russianLayout.indexOf(char);
+                const ukrainianIndex = ukrainianLayout.indexOf(char);
                 
                 if (englishIndex !== -1) {
-                    return russianLayout[englishIndex];
-                } else if (russianIndex !== -1) {
-                    return englishLayout[russianIndex];
+                    return ukrainianLayout[englishIndex];
+                } else if (ukrainianIndex !== -1) {
+                    return englishLayout[ukrainianIndex];
                 } else {
                     return char;
                 }
